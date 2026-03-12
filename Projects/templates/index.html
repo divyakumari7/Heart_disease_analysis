@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Heart Disease Analytics</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2>Health Analytics</h2>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+<li><a href="/dashboard">Dashboard</a></li>
+<li><a href="/story">Story</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Heart Disease Analysis System</h1>
+
+<p>
+Interactive dashboard and story using Tableau visualization
+embedded inside a Flask web application.
+</p>
+
+<a href="/dashboard" class="btn">View Dashboard</a>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>Dashboard</h3>
+
+<p>
+Interactive charts and analytics for heart disease insights.
+</p>
+
+<a href="/dashboard">Open</a>
+
+</div>
+
+<div class="card">
+
+<h3>Story</h3>
+
+<p>
+Step-by-step visual explanation of the heart disease dataset.
+</p>
+
+<a href="/story">Open</a>
+
+</div>
+
+</section>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
